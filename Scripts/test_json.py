@@ -12,3 +12,5 @@ class Test():
         allure.attach("test002描述","执行打印输出语句")
         print("test002执行 ")
         assert 1
+    def test_003(self):
+        assert 0
