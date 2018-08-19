@@ -36,7 +36,7 @@ class TestSMS():
         print( " %s 内容发送成功" % input_text )
         # 断言 短信是否发送成功
         assert input_text in self.sms.get_result_list()
-        print( " %s 内容断言成功，已存在%s列表中" % (input_text,self.sms.get_result_list()) )
+        print( " %s 内容断言成功! 已存在%s列表中" % (input_text,self.sms.get_result_list()) )
     @pytest.mark.run(order=2)
     def test_delete_sms(self):
         # 删除短信
